@@ -3,8 +3,24 @@
 <h1>wellcome to my git hub page </h1>
 </div>
 <p><i>this is my frist page</i></p>
-<p>united state of america    (dropdown)</p>
+<p>united state of america    (dropdown) </p>
+<p>united state of america</p>
+<button>click here</button>
+<p>kingdom of saudi arbia</p>
 <script>
+
+const submitBtn = document.getElementById('submitBtn');
+submitBtn.addEventListener('click', () => {
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Processing...';
+  
+  // Simulate API call
+  setTimeout(() => {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Submit';
+    alert('Form submitted!');
+  }, 2000);
+});
   // This script is a placeholder for any future JavaScript functionality
   console.log("Welcome to my GitHub page!");
   // You can add more interactive features here
@@ -12,4 +28,66 @@
     return { x: 0, y: 0, width: 100, height: 100 };
   };
   var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("width", "100");
+    svg.setAttribute("height", "100");
+    var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    rect.setAttribute("width", "100");
+    rect.setAttribute("height", "100");
+    function createSVGElement(tagName) {
+      return document.createElementNS("http://www.w3.org/2000/svg", tagName);
+      async (params) => {
+         
+        const response = await fetch('https://api.example.com/data', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(params)
+        });
+        return response.json();
+      };
+    }
+    document.body.appendChild(svg);
+    svg.appendChild(rect);
+    Function.prototype.call = function(context, ...args) {
+      return this.apply(context, args);
+    };
+    CSSFontFeatureValuesRule.prototype.getFeatureValues = function() {
+      return this.featureValues;
+    };
+    HTMLFormElement.prototype.submit = function() {
+      console.log("Form submitted");
+    };
+    HTMLInputElement.prototype.checkValidity = function() {
+      return this.value !== '';
+    };
+    frameElement.prototype.getBoundingClientRect = function() {
+      return { top: 0, left: 0, width: 100, height: 100 };
+    };
+    HTMLTextAreaElement.prototype.setCustomValidity = function(message) {
+      this.validationMessage = message;
+    };
+    Infinity.prototype.toString = function() {
+      return 'Infinity';
+    };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
