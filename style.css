@@ -1,3 +1,17 @@
 p {
-    color: #5632
+    color: #5632;
+    font-size: 17px;
 }
+.container {
+    border-radius: 4px;
+    box-shadow: rgba(255, 255, 255, 0.5);
+    height: 20px;
+    width: 40px;
+}
+.container h1 {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    height: 20px;
+}
+
