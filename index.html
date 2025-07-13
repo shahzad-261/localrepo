@@ -4,7 +4,22 @@
 </div>
 <p><i>this is my frist page</i></p>
 <p>united state of america</p>
+<button> click here</button>
 <script>
+    // HTML: <button id="submitBtn">Submit</button>
+
+const submitBtn = document.getElementById('submitBtn');
+submitBtn.addEventListener('click', () => {
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Processing...';
+  
+  // Simulate API call
+  setTimeout(() => {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Submit';
+    alert('Form submitted!');
+  }, 2000);
+});
   // This script is a placeholder for any future JavaScript functionality
   console.log("Welcome to my GitHub page!");
   // You can add more interactive features here
